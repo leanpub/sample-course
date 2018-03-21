@@ -1,0 +1,36 @@
+{quiz, id: 4, points: 10}
+
+# Fun Cat Facts: Quiz #4
+
+## Some Facts About This Quiz
+
+[#todo]
+
+{case-sensitive: true}
+? What is the name of a cat breed that is associated with enjoying water?
+
+! Turkish Van
+
+{words: 10}
+? Name up to five types of colloquial cat coloring types
+
+! Note to teaching assistant: Answers may include types including "Mitted," "Tuxedo," "Magpie," "Harlequin," "Patched."
+
+{case-sensitive: true}
+? What is the name of a cross between a lion and a tiger?
+
+! Liger ; Tigon
+
+{words: 100}
+? What are the three reasons cat videos are so popular online?
+
+{answer}
+Answers may include:
+
+- Because they like to fit into odd things and places, like boxes
+- Because they are cute
+- Because they react curiously to unfamiliar things like laser pointers
+- Because we are hard-wired to like them after millennia of domestication
+{/answer}
+
+{/quiz}

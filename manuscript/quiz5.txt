@@ -1,0 +1,21 @@
+{quiz, id: 5, points: 10}
+
+# Fun Cat Facts: Quiz #5
+
+%% Note to course creators: This example is not currently working, and you will see both questions in the quiz.
+
+?1 How many times has the most-viewed cat video of all time been viewed online?
+
+a) Thousands
+b) Millions
+c) Billions
+D) Impossible to know
+
+?1 How many times has the most-viewed cat video of all time been viewed on YouTube?
+
+a) Thousands
+B) Millions
+c) Billions
+d) Impossible to know
+
+{/quiz}

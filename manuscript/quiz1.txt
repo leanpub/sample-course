@@ -1,0 +1,75 @@
+{quiz, id: quiz1, attemps: 3, auto-submit: false, case-sensitive: true, time-limit: 0d1h0m, points: 10, random-choice-order: true, random-question-order: true; show-answers: none; use-result: latest; versoin: 1; mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
+
+# Fun Cat Facts: Quiz #1
+
+%% Note to course creators: This quiz is meant to include all the quiz-level parameters in a single example. That's why first line in this file has so many paremeters being set. Most quizzes won't be so complicated! 
+
+In this quiz you will be asked questions about some fun cat facts. If you studies the course material carefully, we know you'll pass with flying colors!
+
+## Some Facts About This Quiz
+
+%% Note to course creators: It is useful to set out for students the important parameters of your quiz. For example, you should let them know how many attempts they will be permitted to make when they submit a quiz.
+
+Here are some details about how to take this quiz. Please read them carefully as they will affect your approach to answering these questions!
+
+- Submitting the Quiz: This quiz will not be automatically submitted when you provide your last answer. You'll need to submit the quiz manually, by clicking a button.
+- Case-Sensitive Answers: Unless otherwise indicated, answers to this quiz are case-sensitive. So, be sure to capitalize letters where approrpriate.
+- Time Limit: You must complete this quiz within one day of starting it.
+- Points: This quiz is worth 10 points. Since there are 5 quizzes in this course, each worth 10 points, this quiz is worth 20% of your final grade.
+- Your grade will be calculated based on the latest quiz attempt you have submitted. So, if you score lower on a subsequent attempt, that will lower your overall grade. 
+
+## The Questions
+
+{course-sample: true}
+
+? What is the name of the talking cat in Bulgakov's famous novel?
+
+a) Beetlejuice
+b) Fluffy
+C) Behemoth
+d) Ed
+
+? How many unique letters are there in the name "Behemoth"?
+
+a) 5
+B) 6
+c) 7
+d) 8
+
+{attempts: 1, case-sensitive: false}
+? Name one of the animals in the image of the cat and dog that is presented in the couse. Unlike in the rest of this quiz, in this question you are only permitted **1 attempt** to answer the question correctly. Please not the answer for this question is not case-sensitive.
+
+! Marmalade ; Tangerine
+
+? How fast can cats run?
+
+a) About 10 mph
+b) About 20 mph
+C) About 30 mph
+d) About 40 mph 
+
+? What is the name of a cross between a Burmese cat and a Chinchilla Persian cat?
+
+! Burmilla
+
+? What is the name of the most popular cat on YouTube?
+
+! Maru
+
+? What is the scientific explanation for why cats always land on their feet?
+
+a) Their paws are so heavy it swings their bodies around when they're falling
+b) Their fur is distributed in a way that due to the laws of aerodynamics they must fall feet-first
+c) It's actually not true that they possess this quality
+D) Their bone structure
+
+? Why do cats' eyes shine in the dark?
+
+A) There is a layer behind their retinas that is designed to act like a mirror, increasing the likelihood that their photoreceptors will be struck by incoming photons
+b) Magic
+c) Their whiskers reflect light up into their eyes at a special angle
+d) None of the above
+
+{course-sample: false}
+
+{/quiz}

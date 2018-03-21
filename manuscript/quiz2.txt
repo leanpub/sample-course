@@ -1,0 +1,30 @@
+{quiz, id: quiz2, attempts: 2, points: 10, start-at: 9, time-limit: 0d0h10m}
+
+# Fun Cat Facts: Quiz #2 
+
+## Some Facts About This Quiz
+
+- This quiz has a time limit of 10 minutes.
+- You are permitted to submit 2 attempts to complete this quiz.
+- In this quiz, your grade will be based on the best score you have achieved in a submitted quiz attempt.
+
+? The first cat show was staged in London. In what year did it take place?
+
+a) 1772
+b) 1834
+C) 1871
+d) 1910
+
+? Can cats drink seawater?
+
+! Yes
+
+? Did the ancient Egyptians mummify cats?
+
+! Yes
+
+? What is the name of the coffee type that is made from beans found in cat poop?
+
+! Kopi Luwak
+
+{/quiz}

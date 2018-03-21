@@ -1,0 +1,20 @@
+{quiz, id: quiz3}
+
+# Fun Cat Facts: Quiz #3
+
+- In this quiz, you will see that each question is worth a different number of points. The questions are worth 10 points in total.
+
+{points: 5}
+? What is the name of the most popular cat on YouTube?
+
+! Maru
+
+{random-choice-order: true, points: 5}
+? What is the scientific term for the way cats always land on their feet?
+
+a) "Felix Felis Landus"
+B) The "Righting Reflex"
+c) The "Knievel Effect"
+d) None of the above
+
+{/quiz}

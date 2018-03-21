@@ -1,0 +1,10 @@
+# Fun Cat Facts Quizzes: Introduction
+
+Below you will find some quizzes. We hope you have fun and do well!
+
+Here are some details you should know before taking the quizzes:
+
+- Points: Each quiz is worth 10 points. Since there are 5 quizzes in this course, each is worth 10 points, or 20% of your final grade.
+- Attempts: Some quizzes let you attempt to submit the quiz multiple times. You will see information regarding quiz attempts at the beginning of each quiz.
+- Best or latest result: Unless it is stated otherwise in the quiz, if you submit multiple attempts at a quiz, then your best result will be used in the calculation of your final grade.
+- Time limits: If a quiz has a time limit, this will be mentioned in the information you see at the beginning of the quiz.

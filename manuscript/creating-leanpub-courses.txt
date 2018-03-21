@@ -1,0 +1,967 @@
+# Introduction
+
+In this course you will learn how to make a Leanpub course with all the course-specific options we've built for you.
+
+The intention of this course is to show:
+
+1) How your course will look to you when you are writing it.
+
+2) How your course will look to students when they are taking it.
+
+In the first part of this course, we provide you with explanations and related examples ou can copy and paste into your own course, so that you can then modify these working examples to your own course.
+
+For example, you will find examples of multiple choice questions, setting the number of attempts a student can make to submit a quiz, how to set alternative answers (e.g. "Six" or "6"), how to make questions appear in random order, and many other features and options we support.
+
+In the second part of this course, we provide you with working versions of the examples we show you how to write in the first part.
+
+## All The Things
+
+We also want to provide you with the complete source content for this entire course, so you can see how everything works from a course creator's perspective.
+
+Here is a link to the folder with all the source content, structured appropriately:
+
+[#todo]
+
+In the `manuscript` folder for the course, you will find the text files used to write this course. In the `resources` folder inside the `manuscript` folder, you'll find any resources like images or videos that appear in this course.
+
+## Writing Courses in Plain Text Using Markua
+
+Leanpub courses are written using [Markua](http://markua.com), which was created for the purpose of creating books and courses in plain text.
+
+If you're familiar with Markdown, which is used to write content for the web in plain text, you'll recognize a lot about how Markua works.
+
+You can read the relevant section of the Markua specification document [here](https://leanpub.com/markua/read#leanpub-auto-quizzes-and-exercises). The specification document is not a manual, and should ideally be referred to by people with specific technical needs (like someone building an API).
+
+Here is a video with Peter explaining Markua, if you're interested in learning the back story:
+
+{type: video, poster: "http://img.youtube.com/vi/VOCYL-FNbr0/mqdefault.jpg"}
+![Introducing Markua](https://www.youtube.com/watch?t=105&v=VOCYL-FNbr0)
+
+## Feedback
+
+This course will be updated over time. If you have any suggestions for improvements or requests for additional content, please email our team at <hello@leanpub.com>.
+
+# Course Structure
+
+The basic structure of creating a Leanpub course includes the following:
+
+##  Course Content
+
+Course content can include text, images, embedded videos and internet links. Your course content can be thought of as the "textbook" part of the course, which is separate from asking questions in exercises and quizzes.
+
+## Exercises
+
+In exercises, students are presented with questions to which they can submit answers online. The answers to exercises may also be provided to students before they have tried answering them; this is our version of the classic "the answers are in the back" convention used in printed textbooks.
+
+## Quizzes
+
+In quizzes, students are presented with questions to which they can submit answers online. Quizzes are the basis for the student's final grade. Answers to quizzes are not provided to students until after they have submitted their own answers.
+
+## Grades
+
+Grades are calculated as a result of two factors. The first factor is, did the student provide the right or the wrong answer? Once this is determined, than a correct answer to a question is multiplied by the number of points you have assigned to the question (by default, all questions are assumed to have the same value). Using this formula, a final grade is calculated for each student when they complete a course.
+
+## Certificates
+
+Leanpub course certificates are digital images we automatically deliver to a student when they pass a course. A certificate can include things like a logo and a signature that you provide yourself.
+
+## Course Book Files
+
+Whenever you create a Leanpub course, you are also creating ebook versions of the course in PDF, EPUB and MOBI formats. While students can't actually take quizzes or exercises in these ebooks, they can read the course content.
+
+## Instructor-Only Book Files
+
+When you create a Leanpub course, you can also create an Instructor-only version of the course book files.  This is useful for presenting instructors with information they need, but students should not see.
+
+## Instructor-Only Online Course
+
+When you create a Leanpub course, you an also create an Instructor-only online version of the course. This is useful for presenting instructors with information they need, but students should not see.
+
+Also, you can give names to different outcomes that can be presented on your course's certificates. For example, you can say that if a student passes with a grade greater than 50%, their digital certificate will indicate "Passed," whereas if they passed with a grade of greater than 85%, their digital certificate will indicate "Honors." 
+
+# Types of Questions and Answers
+
+## Writing Questions
+
+All questions in a Leanpub course are written the same way, by writing a sentence that **begins** with a question mark and a space, like this:
+
+%% Hello dear course creator!
+
+%% Because of the %% at the beginning of these lines, you will only see them if you are looking at the source manuscript for this course.
+
+%% We've written these comments to explain something about the rest of this document.
+
+%% To properly show you how to write quiz examples in the course generated from this manuscript, when we write the examples in this mansucript, we need to "wrap" the examples in backticks `` or in between lines that say {type: code} and ```.
+
+%% Otherwise, when you're reading this course online, you would not see what we're writing here. Instead, you would see the actual quiz, and not the manuscript instructions themselves.
+
+%% When you are creating actual quizzes and examples, you should not "wrap" things this way.
+
+%% To see how real quizzes work, rather than the examples below, please look at the quiz files you'll find in the manuscript folder for this course.
+
+%% Thanks!
+
+`? What is the name of the talking cat in Bulgakov's famous novel?`
+
+## Multiple Choice Questions
+
+Writing multiple choice questions requires that you provide the multiple choices in the course manuscript, and indicate which one is the answer by associating it with an upper-case letter.
+
+Here is an example of what it looks like to write the possible answers to a multiple choice question:
+
+{type: code}
+```
+a) Beetlejuice
+b) Fluffy
+C) Behemoth
+d) Ed
+```
+
+## Questions with Short Typed Answers
+
+Short typed answers allow students to type their answers, rather than select from a set of choices.
+
+You indicate in your manuscript that you are creating an answer to a typed question by typing `!` followed by the answer, like this:
+
+`! Behemoth`
+
+## Questions with Lengthy Written Answers
+
+Questions with lengthy written answers allow students to provide answers to things like essay questions.
+
+In your course manuscript, you indicate you want the student to provide a lengthy written answer by providing a relevant parameter, like a page limit or a word limit, or by providing no answer at all. This will be explained in detail below.
+
+Lengthy written answers do not have specific answers and therefore they are not automatically graded by Leanpub. With lengthy written answers, you can instead provide notes that will be shown to the person who will be grading the answer, for example:
+
+`! Give students marks based on the accuracy of their description of the cat's role in the novel's plot.`
+
+# Creating A Simple Quiz or Exercise
+
+Leanpub courses are written in plain text.
+
+This means that in your course manuscript you will type out all the questions and answers as you might expect, but you will also put them in between course-related instructions that you also type.
+
+## Beginning and Ending a Quiz
+
+In your manuscript, you will indicate in writing where each quiz or exercise begins, and where it ends. You also need to give each quiz its own unique ID number or name.
+
+Here is what you type to start the simplest type of quiz:
+
+{type: code}
+```
+{quiz, id: 1}
+```
+
+And here is what you type to end every quiz:
+
+{type: code}
+```
+{/quiz}
+```
+
+For exercises, it works the same way, except you type `exercise` instead of `quiz`.
+
+## Writing Questions
+
+When you type a question in a quiz or an exercise, you *begin* it with a question mark and a space, like this:
+
+{type: code}
+```
+? How many unique letters are there in the name "Behemoth"?
+```
+
+## Writing Answers
+
+Writing an answer depends on what kind of question it's answering, whether or not it has multiple correct answers, etc.
+
+Here is a simple example of how you would write an answer to a multiple choice question. You indicate which answer is correct by using an upper-case letter, in this case the letter `B`:
+
+{type: code}
+```
+a) 7
+B) 6
+c) 8
+```
+
+## Example of a Basic Quiz
+
+With the pieces set out above, we can now type out a complete quiz:
+
+{type: code}
+```
+{quiz, id: 1}
+
+? How many unique letters are there in the name "Behemoth"?
+
+a) 5
+B) 6
+c) 7
+d) 8
+
+{/quiz}
+```
+
+# Creating Course, Quiz and Exercise Content
+
+In this section we set out some examples of the kind of content you can include in your Leanpub course.
+
+Essentially, you can include all the content supported by Markua, the plain text syntax we use to generate both books and courses.
+
+## Chapter Headings
+
+In your course content, you create chapter headings by typing `#` followed by a space at the beginning of a line.
+
+You can create sub-sections by typing multiple `#` followed by a space at the beginning of a line.
+
+Here is an example of a chapter heading followed by a sub-heading:
+
+{type: code}
+```
+# Famous Cats
+
+## Famous Cats In History
+
+```
+
+You can also help structure the presentation of your course by including chapter headings in quizzes and exercises themselves.
+
+To include a chapter heading in a quiz, under the line where you start the quiz, type `#` followed by a space and the chapter title.
+
+This is an example of what you would type to include a chapter heading in a quiz.
+
+{type: code}
+```
+{quiz, id: famouscats}
+# Famous Cats in History
+```
+## Links
+
+You can insert internet links in your course to things like online videos and other content.
+
+To insert a link, you use the classic Markdown combination of square brackets `[]` to surround the text you want to show the student, and round brackets `()` to surround the URL the link points to.
+
+Here is an example of how you include a link in your course:
+
+{type: code}
+```
+Watch this [video online](https://www.youtube.com/watch?time_continue=1&v=VOCYL-FNbr0) to find out more about Markua.
+```
+
+## Images
+
+You can include images in a course just like you include images in a book.
+
+Here is an image of a cat named Marmalade and a dog named Tangerine:
+
+![Marmalade and Tangerine](marm-and-tangie.jpg)
+
+Here is an example of what you would type to include an image like this in your course:
+
+{type: code}
+```
+![Marmalade and Tangerine](marm-and-tangie.jpg)
+```
+
+The `!` indicates that this is content, like an image; the part in between the square brackets `[]` is the caption that will appear underneath the image; and the part in between the round brackets `()` is the name of the file saved in the course's `resources` folder, which is itself save in the course's `manuscript` folder.
+
+## Embedding Videos
+
+You can embed videos in Leanpub courses.
+
+There are two types of local video files you can use: MP4 and WebM.
+
+When you embed a video, you need a URL that points to an image or "poster" in addition to a URL that links to a video file.
+
+Here is what you would type to embed a video from YouTube:
+
+{type: code}
+```
+{type: video, poster: "http://img.youtube.com/vi/VOCYL-FNbr0/mqdefault.jpg"}
+![Introducing Markua](https://www.youtube.com/watch?t=105&v=VOCYL-FNbr0)
+```
+
+Eventually you will be able to embed locally-stored videos in the content for your course, as you'll see with the short clip below ("locally-stored" files are files that you have saved in the `resources` folder for your course).
+
+Currently you can't embed locally-stored videos in quizzes, but you can embed one just before a quiz if you want to.
+
+Here is what you would type to embed a locally-stored video in your course:
+
+{type: code}
+```
+![Short Clip from Local Video File](peter-clip.m4a)
+```
+
+# Quiz, Exercise and Question Parameters
+
+In your course, manuscript, you can set a number of parameters to quizzes and exercies, and questions and answers.
+
+These parameters include things like time limits, the number of permitted attempts to take a course (so students can try to improve their grades), the points a quiz is worth, and many other things.
+
+In each case, to make a parameter work, you need to type out the related instruction in your course manuscript.
+
+In the next section of this course, you will find a list of all the parameters and their related instructions, with examples you can copy and paste into your own course, to see how they work. These parameters are divided up into two categories:
+
+1) Parameters set for an entire quiz or exercise, or "Quiz & Exercise Parameters"
+2) Parameters set for individual questions, or "Question Parameters"
+
+# Quiz & Exercise Parameters
+
+## Number of Attempts
+
+You can set the number of attempts a student is permitted to make to complete a quiz.
+
+By default, the number of attempts is `1`, which means students can only submit each quiz once.
+
+- The instruction for a word limit is `attempts:` followed by a space and a number.
+
+Here is an example of a quiz with the number of permitted attempts set at `3`:
+
+{type: code}
+```
+{quiz, id: a, attempts: 3}
+
+? How fast can cats run?
+
+a) About 10 mph
+b) About 20 mph
+C) About 30 mph
+d) About 40 mph 
+
+{/quiz}
+```
+
+## Auto-Submit
+
+You can set it so a quiz is automatically submitted under various conditions, for example if a time limit expires. By default, students must manually submit a question or quiz by clicking a button.
+
+The default setting is for quizzes and exercises to auto-submit if a time limit expires.
+
+- The instruction for a word limit is `auto-submit:` followed by a space and `true` or `false`.
+
+Here is an example of a quiz with a time limit of one hour but the auto-submit feature turned off:
+
+{type: code}
+```
+{quiz, id: b, time-limit: 0d1h0m, auto-submit: false}
+
+? According to legend, the invention of the pet door (also called a "cat flap" or a "doggy door") has been attributed to which historical figure?
+
+a) Albert Einstein
+b) Aphra Behn
+c) Cleopatra
+d) Isaac Newton
+
+{/quiz}
+```
+
+## Case-Sensitive Answers
+
+You can make all the answers in a quiz or exercise case-sensitive. For example, you can say that an answer must have an upper-case letter, where "Six" would be correct but "six" would not be correct.
+
+Please note this parameter only applies to answers where students type short answers.
+
+- The instruction for making an answer case-sensitive is `case-sensitive:` followed by a space and the word `true` or the word `false`.
+
+Here is an example of a quiz with a question that requires a case-sensitive typed answer:
+
+{type: code}
+```
+{quiz, id: c, case-sensitive: true}
+
+? What is the name of a cross between a Burmese cat and a Chinchilla Persian cat?
+
+! Burmilla
+
+{/quiz}
+```
+
+## Quiz Points
+
+You can assign a different number of points to each quiz. (In Leanub courses, exercises are not marked.)
+
+If you do not set any points, then all quizzes will be treated equally in the calculatioin of the student's grade for a course.
+
+The instruction for assigning a number of points to a question is `points:` followed by a space and a number.
+
+Here's an example of a quiz that is worth 10 points:
+
+{type: code}
+```
+{quiz, id: d, points: 10}
+
+? What is the name of the most popular cat on YouTube?
+
+! Maru
+
+{/quiz}
+```
+
+## Random Choice Order
+
+It's a well-known fact that the order in which you present the choices in a multiple-choice question can affect the way a student answers the question. In a Leanpub course, you can choose to set a quiz or exercise so that all its multiple choice questions present answer choices to students in a random order.
+
+- The instruction for setting a question to have a random choice order is `random-choice-order:` followed by a space and `true` or `false`.
+
+Here is an example of a quiz with a multiple choice question set to display the choices to students in a random order:
+
+{type: code}
+```
+{quiz, id: e, random-choice-order: true}
+
+? What is the scientific term for the way cats always land on their feet?
+
+a) "Felix Felis Landus"
+B) The "Righting Reflex"
+c) The "Knievel Effect"
+d) None of the above
+
+{/quiz}
+```
+
+## Random Question Order
+
+You can also choose to present the questions in a quiz in a random order to students, for the same reason as we offer the option to provide answer choices in a random order.
+
+- The instruction for setting a question to have a random choice order is `random-question-order:` followed by `true` or `false`.
+
+Here is an example of a quiz with multiple choice questions, where the quiz is set to display the questions to students in a random order:
+
+{type: code}
+```
+{quiz, id: f, random-question-order: true}
+
+? What is the scientific explanation for why cats always land on their feet?
+
+a) Their paws are so heavy it swings their bodies around when they're falling
+b) Their fur is distributed in a way that due to the laws of aerodynamics they must fall feet-first
+c) It's actually not true that they possess this quality
+D) Their bone structure
+
+? Why do cats' eyes shine in the dark?
+
+A) There is a layer behind their retinas that is designed to act like a mirror, increasing the likelihood that their photoreceptors will be struck by incoming photons
+b) Magic
+c) Their whiskers reflect light up into their eyes at a special angle
+d) None of the above
+
+{/quiz}
+```
+
+## "Start At" Number
+
+In quizzes and exercises, all questions presented to students are numbered automatically, starting at 1 by default.
+
+However, in a course you may be presenting students with multiple quizzes, and you may want a quiz to start at a number that is 1 higher than the last question of the previous course. You can use our "Start At" feature to do this.
+
+- The instruction for setting a "start at" number is `start-at:` followed by a space and a number.
+
+Here is an example of a quiz where the questions will start at the number 11:
+
+{type: code}
+```
+{quiz, id: g, start-at: 11}
+
+? The first cat show was staged in London. In what year did it take place?
+
+a) 1772
+b) 1834
+C) 1871
+d) 1910
+
+{/quiz}
+```
+
+## Showing Answers to Students
+
+You can choose to show the answers to students after they have submitted an answer to the questions in a quiz or exercise.
+
+By default, for quizzes, answers are shown to students when they submit incorrect answers. (Please note that these answers are only shown after students have met the number of permitted answer attempts, not before.)
+
+By default, for exercises, all the answers are shown to students after they submit their own answers.
+
+- The instruction for a manually changing the settings for showing answers in a quiz or exercise is `show-answers:` followed by a space and `all`, `incorrect`, or `none`.
+
+Here is an example of quiz that will show none of the answers to students:
+
+{type: code}
+```
+{quiz, id: h, show-answers: none}
+
+? How much do cats sleep throughout the day on average?
+
+a) 8-9 hours
+b) 10-11 hours
+C) 12-16 hours
+d) 18-20 hours
+
+{/quiz}
+```
+
+## Time Limits
+
+You can set time limits to quizzes and exercises.
+
+When you are setting a time limit, you need to specify the number of days with a number and the letter `d` for "days," a number and the letter `h` for "hours," and a number and the letter `m` for "minutes." 
+
+- The instruction for setting a time limit of a quiz or exercis number is `time-limit:` followed by a space and a sequence of numbers and letters. For example, the following instruction sets the time limit to be 30 minutes:
+
+`time-limit: 0d0h30m`
+
+Here is an example of a quiz with a 30-minute time limit:
+
+{type: code}
+```
+{quiz, id: i, time-limit: 0d0h10m}
+
+? Can cats drink seawater?
+
+! Yes
+
+</quiz>
+```
+
+## Use Result
+
+When you displaying an assessment of a student's performance on a quiz, or you want to determine whether or not they have passed, you can choose to use either their best result, or their latest result.
+
+Obviously, this only applies where students are permitted to make multiple attempts to complete a quiz.
+
+By default, quizzes are graded based on the best result.
+
+- The instruction for a word limit is `use-result:` followed by a space and `best` or `latest`.
+
+Here is an example of quiz that is set to base the student's grade on their latest result:
+
+{type: code}
+```
+{quiz, id: j, attempts: 5, use-result: latest}
+
+? Did the ancient Egyptians mummify cats?
+
+! Yes
+
+{/quiz}
+```
+
+## Version
+
+You can associate a quiz with a version number. This is primarily intended to be used in analytics by the course adminstrators or instructors. This number is not shown to students.
+
+By default, the version number is `1`.
+
+- The instruction for a word limit is `version:` followed by a space and a number.
+
+Here is an example of quiz with a version number, in this case `3`
+
+{type: code}
+```
+{quiz, id: k, version: 3}
+
+? Which country sent the first cat into space? (The cat survived.)
+
+A) France
+b) Soviet Union
+c) United States
+d) China
+
+{/quiz}
+```
+
+## Marking Quizzes and Exercises via an API
+
+You can use an API to mark answers yourself.
+
+This is a pretty technical feature and we suggest you refer to the [Markua specificiation document](https://leanpub.com/markua/read) for more information if you want to build a compatible API. You can search the document for `mark-request-url` to find the correct section.
+
+- The instruction for associating a quiz or exercise with an external API for marking is  `mark-request-url:` followed by a space and URL.
+
+Here is an example of a quiz with external marking set up (please note the URL is fake):
+
+{type: code}
+```
+{quiz, id: l, mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
+
+? What is the name of the coffee type that is made from beans found in cat poop?
+
+! Kopi Luwak
+
+{/quiz}
+```
+
+# Question Parameters
+
+## Setting Question Points
+
+You can assign a different number of points to questions in a course.
+
+If you do not set any points, then all questions will be treated equally in the calculatioin of the student's grade.
+
+The instruction for assigning a number of points to a question is `points:` followed by a space and a number.
+
+Here's an example of a quiz with a question that is worth 5 points:
+
+{type: code}
+```
+{quiz, id: m}
+
+{points: 5}
+? What is the name of the most popular cat on YouTube?
+
+! Maru
+
+{/quiz}
+```
+
+## Random Choice Order
+
+As we mention above, in the *Quiz Parameters" section, i's a well-known fact that the order in which you present the choices in a multiple-choice question can affect the way a student answers the question. In a Leanpub course, you can choose to set it so that a multiple choice question presents its answer choices to students in a random order.
+
+Please note this section described turning on random choice order for individual questions; you can also turn on random choice order for an entire quiz, as we discuss in the *Quiz Parameters" section above). 
+
+- The instruction for setting a question to have a random choice order is `random-choice-order:` followed by a space and `true` or `false`.
+
+Here is an example of a quiz with a multiple choice question set to display the choices to students in a random order:
+
+{type: code}
+```
+{quiz, id: n}
+
+{random-choice-order: true}
+? What is the scientific term for the way cats always land on their feet?
+
+a) "Felix Felis Landus"
+B) The "Righting Reflex"
+c) The "Knievel Effect"
+d) None of the above
+
+{/quiz}
+```
+
+## Case-Sensitive Answers
+
+You can set things so that answers for questions where students type short answers are case-sensitive. For example, you can say that an answer must have an upper-case letter, where "Six" would be correct but "six" would not be correct.
+
+Please note this parameter only applies to answers where students type short answers.
+
+- The instruction for making an answer case-sensitive is `case-sensitive:` followed by a space and the word `true` or the word `false`.
+
+Here is an example of a quiz with a question that requires a case-sensitive typed answer:
+
+{type: code}
+```
+{quiz, id: o}
+
+{case-sensitive: true}
+? What is the name of a cat breed that is associated with enjoying water?
+
+! Turkish Van
+
+{/quiz}
+```
+
+## Word, Line and Page Limits
+
+You can set word, line and page number limits for questions that require lengthy written answers.
+
+- The instruction for a word limit is `words:` followed by a space and a number.
+
+Here is an example of how you would write a quiz question that has an answer with a 10-word limit:
+
+{type: code}
+```
+{quiz, id: p}
+
+{words: 10}
+? Name up to five types of colloquial cat coloring types
+
+! Note to teaching assistant: Answers may include types including "Mitted," "Tuxedo," "Magpie," "Harlequin," "Patched.
+"
+{/quiz}
+```
+
+- The instruction for a page limit is `pages:` followed by a space and a number.
+
+Here is an example of how you would write a quiz question that has an answer with a 2-page limit:
+
+{type: code}
+```
+{quiz, id: q}
+
+{pages: 2}
+? Write an essay on why cats are awesome.
+
+! Note to teaching assistant: Answers should be graded based on the quality of the structure of the essay and the persuasiveness of the points made.
+
+{/quiz}
+```
+
+- The instruction for a line limit is `lines:` followed by a space and a number.
+
+Here is an example of how you would write a quiz question that has an answer with a 5-line limit:
+
+{type: code}
+```
+{quiz, id: r}
+
+{lines: 5}
+? Write a brief paragraph on why dogs are also awesome.
+
+! Note to teaching assistant: Extra points are to be awarded if the student mentions howmuch fun it is to take dogs for walks, as this is a classic difference between dogs and cats.
+
+{/quiz}
+```
+
+## Multiple Correct Typed Answers
+
+For any question you create that requires a short typed answer, you can set multiple correct answers. For example, you could say both "6" and "Six" are correct answers to your question.
+
+The instruction for including multiple correct typed answers it to introduce a space and a semi-colon `;` after each answer.
+
+Here is an example of a quiz with a question that has multiple correct answers:
+
+{type: code}
+```
+{quiz, id: s}
+
+{case-sensitive: true}
+? What is the name of a cross between a lion and a tiger?
+
+! Liger ; Tigon
+
+{/quiz}
+```
+
+## Showing Lengthy Written Answer Notes to Instructors
+
+As discussed above, if a student is required to give a long written answer to a question, then you can provide a short note to the person grading the question, like this:
+
+`! Give students marks based on the accuracy of their description of that cat's role in the novel's plot.`
+
+However, sometimes you will want to provide longer answer notes to the person who is grading the question. To do that, you can use the `{answer}` instruction to begin the answer section and `{/answer}` to end the answer section.
+
+Here is an exmaple of a quiz with question requiring a lengthy written answer, and with a multi-line answer note for the person who will be grading the question:
+
+{type: code}
+```
+{quiz, id: t}
+
+{words: 100}
+? What are the three reasons cat videos are so popular online?
+
+{answer}
+Answers may include:
+
+- Because they like to fit into odd things and places, like boxes
+- Because they are cute
+- Because they react curiously to unfamiliar things like laser pointers
+- Because we are hard-wired to like them after millennia of domestication
+{/answer}
+
+{/quiz}
+```
+
+## Question Alternates
+
+You can choose alternate questions to be presented to students. This is different from random question ordering.
+
+With question alternates, you can set it so that Leanpub must pick only one of two alternative questions you create.
+
+If you have also turned on random question ordering, then Leanpub will present the question that it chooses to the student along with all the other questions in a random order.
+
+- The instruction for assigning alternate questions is to give the questions consecutive numbers, after the `?` at the beginning of each line. For example, you would start the first question with `?1` followed by a space, and the second question with `?2` followed by a space.
+
+Here's an example of how you would write a quiz with question alternates. It includes alternates because both of the questions start with `?1` and `?1`:
+
+{type: code}
+```
+{quiz, id: u}
+
+?1 How many times has the most-viewed cat video of all time been viewed online?
+
+a) Thousands
+b) Millions
+c) Billions
+D) Impossible to know
+
+?1 How many times has the most-viewed cat video of all time been viewed on YouTube?
+
+a) Thousands
+b) Millions
+c) Billions
+D) Impossible to know
+
+{/quiz}
+```
+
+## Question and Answer Key
+
+You can create a question and answer key that can be used for manually grading quizzes. [#todo]
+
+# Sample Courses
+
+You can create a sample version of each course that prospective students can try out for free.
+
+To include content in a sample version of a course, at the beginning of the section you want to include, type `{course-sample: true}`, and at the end of the section you want to include, type `{course-sample: false}`.
+
+Here is an example:
+
+{type: code}
+```
+
+This content would not be included in a course sample.
+
+{course-sample: true}
+
+This content would be included in a course sample.
+
+{course-sample: false}
+
+This content would not be included in a course sample.
+
+```
+
+Please note you can do this in multiple places in your manuscript if you choose to do so. The course sample material will be presented in the same order as it is set in your manuscript.
+
+# Course Instructor Material
+
+There are two types of course instructor material you can write that will only be seen in "Instructor" versions of your course.
+
+## 1) Instructor Versions of the Book Files
+
+Whenever you create a Leanpub course, you are also creating a book version of your course.
+
+You can create specific "Instructor" versions of these book files by explicitly including Instructor-only sections on your course manuscript.
+
+- The instruction for creating Instrucor-only book content is to type `{instructor: true}` before the Instructor-only book content, and to type `{instructor: false}` after the Instructor-only book content.
+
+{type: code}
+```
+{instructor: true}
+
+This content would appear in the Instructor version of the book files generated from your course manuscript.
+
+{instructor: false}
+
+This content would not appear in the Instructor version of the book files generated from your course manuscript.
+
+```
+
+Please note you can do this in multiple places in your manuscript if you choose to do so. The Instructor-only material will be presented in the same order as it is set in your manuscript.
+
+## 2) Instructor Version of the Online Course
+
+You can create specific an "Instructor" version of an online course by explicitly including Instructor-only sections on your course manuscript.
+
+- The instruction for creating Instrucor-only book content is to type `{course-instructor: true}` before the Instructor-only online content, and to type `{course-instructor: false}` after the Instructor-only online content.
+
+{type: code}
+```
+{instructor: true}
+
+This content would appear in the Instructor version of the online course generated from your course manuscript.
+
+{instructor: false}
+
+This content would not appear in the Instructor version of the online course generated from your course manuscript.
+
+```
+
+Please note you can do this in multiple places in your manuscript if you choose to do so. The Instructor-only material will be presented in the same order as it is set in your manuscript.
+
+# Notes to Course Creators and Instructors
+
+In your manuscript, there are a few ways you can leave notes for other people, that you do not want students to see.
+
+## 1) "Comment Out" a Line in Your Manuscript
+
+Sometimes you may want to write something in the manuscript of a course that you do not want to appear in the online content or any of the books generated from your manuscript.
+
+- The instruction for leaving a comment in your manuscript that only people looking at the manuscript will see is to start a line with two percent signs like this `%%`, followed by a space.
+
+Here is an example:
+
+`%% If you typed this in a course manuscript, students would not see it!`
+
+## 2) Exclude from Course
+
+You can also exclude content from the course that will be generated online, by identifying that it is not course content.
+
+- The instruction for excluding content from the online course is to type `{course: false}` before the content you want to exclude, and then type `{course: true}` after the content you want to exclude.
+
+Here is an example:
+
+{type: code}
+```
+{course: false}
+
+This line would be excluded from a course.
+
+{course: true}
+
+```
+
+## 3) Include Only in the Instructor Version of the Book Files Generated from the Course Manuscript Files
+
+You can create content that will only be presented in the Instructor version of the book files that are generated from your course manuscript.
+
+- The instruction for creating content that is only presented in the Instructor book for a course is to type `{instructor: true}` before the content you want to exclude, and then type `{instructor: false}` after the content you want to exclude.
+
+Here is an example:
+
+{type: code}
+```
+{instructor: true}
+
+This line would be excluded from a course, but would be included in the Instructor book for a course.
+
+{course: false}
+
+```
+
+## 4) Include Only in the Instructor Version of the Online Course Generated from the Course Manuscript Files
+
+You can create content that will only be presented in the Instructor version of the online course that is generated from your course manuscript.
+
+- The instruction for creating content that is only presented in the Instructor version of the online course is to type `{course-instructor: true}` before the content you want to exclude, and then type `{course-instructor: false}` after the content you want to exclude.
+
+Here is an example:
+
+{type: code}
+```
+{course-instructor: true}
+
+This line would be excluded from a course, but would be included in the Instructor version of the online course.
+
+{course-instructor: false}
+
+```
+
+
+# Previewing and Publishing A Course
+
+You can now copy and paste the text above into your own course manuscript and run a preview to see how it works.
+
+Running a "preview" lets you see the impact of any changes you have made without exposing them to the public, leaving you free to experiment and even to make mistakes.
+
+Students will only see the changes you make when you publish your course for the first time, or when you publish a new version of your course.
+
+You will find the options to preview and publish your course in the "Course Dashboard" menu for your book, on the left side of the screen when you're working on your course in Leanpub.
+
+
+# More Information
+
+There's a lot more you can do when you're making courses with Markua. Here's a brief list of what else you can do:
+
+- Assign a specific number of points to each question
+- Make written or "fill in the blank" answers case-sensitive
+- Specify the maximum number of lines or pages for an answer
+- Assign more than one correct answer to a question
+- Set it so the possible answers to a multiple choice question are presented in a random order to students
+
+# Example Quizzes
+
+Now that we have presented you with instructions for all of Leanpub's course-specific features, we will show you how these example look in quiz form, so you can see what everything looks like to students.
+
+In the `manuscript` folder in this course, you will see that these quizzes are written in separate files. To make files show up in the course when you create a new preview or publish a new version, you need to type their file names in the `Book.txt` file you will find in the `manuscript` folder.
+
+Have fun!
