@@ -1,0 +1,322 @@
+
+# Introduction
+
+Please download the `manuscript` folder for this course to see the material from which it is generated. You can download the zip folder with this link: [https://github.com/leanpub/sample-course/archive/master.zip](https://github.com/leanpub/sample-course/archive/master.zip).
+
+Leanpub courses are written using [Markua](http://markua.com), which was created for the purpose of creating books and courses in plain text.
+
+Below is a video with Peter explaining Markua, if you're interested in learning the back story. Please check the source material to see how you embed online videos in Leanpub courses.
+
+{type: video, poster: "http://img.youtube.com/vi/VOCYL-FNbr0/mqdefault.jpg"}
+![Introducing Markua](https://www.youtube.com/watch?t=105&v=VOCYL-FNbr0)
+
+Here is an image of a cat named Marmalade and a dog named Tangerine:
+
+![Marmalade and Tangerine](marm-and-tangie.jpg)
+
+Please check the `resources` folder in the `manuscript` folder for this course to see where local files should be stored.
+
+%% If you typed this in a course manuscript, students would not see it
+
+{course: false}
+
+This line would be excluded from a course.
+
+{course: true}
+
+{course-sample: true}
+
+This content will be included in a course sample.
+
+{course-sample: false}
+
+{instructor: true}
+
+This content will appear in the Instructor version of the book files generated from your course manuscript.
+
+{instructor: false}
+
+{course-instructor: true}
+
+This content would appear in the Instructor version of the online course generated from your course manuscript.
+
+{course-instructor: false}
+
+{quiz, id: 1}
+
+%% This is an example of a quiz with multiple-choice question.
+
+? How many unique letters are there in the name of the cat "Behemoth" from Bulgakov's famous novel?
+
+a) 5
+B) 6
+c) 7
+d) 8
+
+{/quiz}
+
+{quiz, id: a, attempts: 3}
+
+%% This is an example of a quiz permitting 3 attempts.
+
+? How fast can cats run?
+
+a) About 10 mph
+b) About 20 mph
+C) About 30 mph
+d) About 40 mph 
+
+{/quiz}
+
+{quiz, id: b, time-limit: 0d1h0m, auto-submit: false}
+
+%% This is an example of a quiz with auto-submit turned off (it is turned on by default).
+
+? According to legend, the invention of the pet door (also called a "cat flap" or a "doggy door") has been attributed to which historical figure?
+
+a) Albert Einstein
+b) Aphra Behn
+c) Cleopatra
+d) Isaac Newton
+
+{/quiz}
+
+{quiz, id: c, case-sensitive: true}
+
+%% This is an example of a quiz with a case-sensitive answer.
+
+? What is the name of a cross between a Burmese cat and a Chinchilla Persian cat?
+
+! Burmilla
+
+{/quiz}
+
+{quiz, id: d, points: 10}
+
+%% This is an example of a quiz worth 10 points.
+
+? What is the name of the most popular cat on YouTube?
+
+! Maru
+
+{/quiz}
+
+{quiz, id: e, random-choice-order: true}
+
+%% This is an example of a quiz where the answer choices for multiple-choice questions will be presented to students in a randome order.
+
+? What is the scientific term for the way cats always land on their feet?
+
+a) "Felix Felis Landus"
+B) The "Righting Reflex"
+c) The "Knievel Effect"
+d) None of the above
+
+{/quiz}
+
+{quiz, id: f, random-question-order: true}
+
+%% This is an example of a quiz where the questions will be presented to students in a randome order.
+
+? What is the scientific explanation for why cats always land on their feet?
+
+a) Their paws are so heavy it swings their bodies around when they're falling
+b) Their fur is distributed in a way that due to the laws of aerodynamics they must fall feet-first
+c) It's actually not true that they possess this quality
+D) Their bone structure
+
+? Why do cats' eyes shine in the dark?
+
+A) There is a layer behind their retinas that is designed to act like a mirror, increasing the likelihood that their photoreceptors will be struck by incoming photons
+b) Magic
+c) Their whiskers reflect light up into their eyes at a special angle
+d) None of the above
+
+{/quiz}
+
+{quiz, id: g, start-at: 11}
+
+%% This is an example of a quiz where the question numbering will start at 11.
+
+? The first cat show was staged in London. In what year did it take place?
+
+a) 1772
+b) 1834
+C) 1871
+d) 1910
+
+{/quiz}
+
+{quiz, id: h, show-answers: none}
+
+%% This is an example of a quiz where the answer will not be shown to students after they submit the quiz (answers are shown upon quiz submission by default).
+
+? How much do cats sleep throughout the day on average?
+
+a) 8-9 hours
+b) 10-11 hours
+C) 12-16 hours
+d) 18-20 hours
+
+{/quiz}
+
+{quiz, id: i, time-limit: 0d0h10m}
+
+%% This is an example of a quiz with a time limit.
+
+? Can cats drink seawater?
+
+! Yes
+
+</quiz>
+
+{quiz, id: j, attempts: 5, use-result: latest}
+
+%% This is an example of a quiz where the grade will be determined by the latest result of an attempt to complete the quiz (the best result is used by default).
+
+? Did the ancient Egyptians mummify cats?
+
+! Yes
+
+{/quiz}
+
+{quiz, id: k, version: 3}
+
+%% This is an example of a quiz with a version number (it will not be shown to students).
+
+? Which country sent the first cat into space? (The cat survived.)
+
+A) France
+b) Soviet Union
+c) United States
+d) China
+
+{/quiz}
+
+
+{quiz, id: l, mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
+
+%% This is an example of a quiz where the marking is done by an external API. The URL is not real and is provided only as an example
+
+? What is the name of the coffee type that is made from beans found in cat poop?
+
+! Kopi Luwak
+
+{/quiz}
+{quiz, id: m}
+
+%% This is an example of a quiz with a question that has a unique number of points, in this case 5.
+
+{points: 5}
+? What is the name of the most popular cat on YouTube?
+
+! Maru
+
+{/quiz}
+
+{quiz, id: n}
+
+%% This is an example of a quiz with a question that has a random choice order for the presentation of the answers.
+
+{random-choice-order: true}
+? What is the scientific term for the way cats always land on their feet?
+
+a) "Felix Felis Landus"
+B) The "Righting Reflex"
+c) The "Knievel Effect"
+d) None of the above
+
+{/quiz}
+
+{quiz, id: o}
+
+%% This is an example of a quiz with a question that has its answer set to be case-sensitive.
+
+{case-sensitive: true}
+? What is the name of a cat breed that is associated with enjoying water?
+
+! Turkish Van
+
+{/quiz}
+
+{quiz, id: p}
+
+%% This is an example of a quiz with a question that requires a written answer and has a word limit, in this case 10.
+
+{words: 10}
+? Name up to five types of colloquial cat coloring types
+
+! Note to teaching assistant: Answers may include types including "Mitted," "Tuxedo," "Magpie," "Harlequin," "Patched.
+"
+{/quiz}
+
+{quiz, id: q}
+
+%% This is an example of a quiz with a question that requires a written answer and has a page limit, in this case 2.
+
+{pages: 2}
+? Write an essay on why cats are awesome.
+
+! Note to teaching assistant: Answers should be graded based on the quality of the structure of the essay and the persuasiveness of the points made.
+
+{/quiz}
+
+{quiz, id: r}
+
+%% This is an example of a quiz with a question that requires a written answer and has a line limit, in this case 5.
+
+{lines: 5}
+? Write a brief paragraph on why dogs are also awesome.
+
+! Note to teaching assistant: Extra points are to be awarded if the student mentions howmuch fun it is to take dogs for walks, as this is a classic difference between dogs and cats.
+
+{/quiz}
+
+{quiz, id: s}
+
+%% This is an example of a quiz with a question that requires a short typed answer where there are multiple correct answers, in this case either Liger or Tigon.
+
+? What is the name of a cross between a lion and a tiger?
+
+! Liger ; Tigon
+
+{/quiz}
+
+{quiz, id: t}
+
+%% This is an example of a quiz that provides instructors with written instructions regarding the assessment of answers. Students will not see thse instructions.
+
+{words: 100}
+? What are the three reasons cat videos are so popular online?
+
+{answer}
+Answers may include:
+
+- Because they like to fit into odd things and places, like boxes
+- Because they are cute
+- Because they react curiously to unfamiliar things like laser pointers
+- Because we are hard-wired to like them after millennia of domestication
+{/answer}
+
+{/quiz}
+
+
+{quiz, id: u}
+
+%% This is an example of a quiz with question alternates. Where questions are written in the course manuscript with the same number after the ? (in this case the number 1), then the course will randomly present the student with one of the alternates.
+
+?1 How many times has the most-viewed cat video of all time been viewed online?
+
+a) Thousands
+b) Millions
+c) Billions
+D) Impossible to know
+
+?1 How many times has the most-viewed cat video of all time been viewed on YouTube?
+
+a) Thousands
+b) Millions
+c) Billions
+D) Impossible to know
+
+{/quiz}
