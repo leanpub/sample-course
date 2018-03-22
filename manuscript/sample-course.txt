@@ -2,12 +2,18 @@
 
 Please download the `manuscript` folder for this course to see the material from which it is generated. You can download the zip folder with this link: [https://github.com/leanpub/sample-course/archive/master.zip](https://github.com/leanpub/sample-course/archive/master.zip).
 
+# Writing Courses in Markua
+
 Leanpub courses are written using [Markua](http://markua.com), which was created for the purpose of creating books and courses in plain text.
+
+You can read the Markua specificiation here: [https://leanpub.com/markua/read](https://leanpub.com/markua/read).
 
 Below is a video with Peter explaining Markua, if you're interested in learning the back story. Please check the source material to see how you embed online videos in Leanpub courses.
 
 {type: video, poster: "http://img.youtube.com/vi/VOCYL-FNbr0/mqdefault.jpg"}
 ![Introducing Markua](https://www.youtube.com/watch?t=105&v=VOCYL-FNbr0)
+
+# Images and Local Content
 
 Here is an image of a cat named Marmalade and a dog named Tangerine:
 
@@ -16,12 +22,6 @@ Here is an image of a cat named Marmalade and a dog named Tangerine:
 Please check the `resources` folder in the `manuscript` folder for this course to see where local files should be stored.
 
 %% If you typed this in a course manuscript, students would not see it
-
-{course: false}
-
-This line will be excluded from a course.
-
-{course: true}
 
 {course-sample: true}
 
@@ -179,9 +179,9 @@ d) 18-20 hours
 
 {/quiz}
 
-{quiz, id: quiz-l, version: 3}
+{exercise, id: exercise-a, version: 3}
 
-%% This is an example of a quiz with a version number (it will not be shown to students).
+%% This is an example of an exercise with a version number (it will not be shown to students).
 
 ? Which country sent the first cat into space? (The cat survived.)
 
@@ -190,32 +190,33 @@ b) Soviet Union
 c) United States
 d) China
 
-{/quiz}
+{/exercise}
 
 
-{quiz, id: quiz-m, mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
+{exercise, id: exercise-b, mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
 
-%% This is an example of a quiz where the marking is done by an external API. The URL is not real and is provided only as an example
+%% This is an example of an exercise where the marking is done by an external API. The URL is not real and is provided only as an example
 
 ? What is the name of the coffee type that is made from beans found in cat poop?
 
 ! Kopi Luwak
 
-{/quiz}
-{quiz, id: quiz-n}
+{/exercise}
 
-%% This is an example of a quiz with a question that has a unique number of points, in this case 5.
+{exercise, id: exercise-c}
+
+%% This is an example of an exercise with a question that has a unique number of points, in this case 5.
 
 {points: 5}
 ? What is considered to be the oldest breed of domestic cat?
 
 ! Egyptian Mau
 
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-o}
+{exercise, id: exercise-d}
 
-%% This is an example of a quiz with a question that has a random choice order for the presentation of the answers.
+%% This is an example of an exercise with a question that has a random choice order for the presentation of the answers.
 
 {random-choice-order: true}
 ? What is the scientific term for the way cats always land on their feet?
@@ -225,65 +226,65 @@ B) The "Righting Reflex"
 c) The "Knievel Effect"
 d) None of the above
 
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-p}
+{exercise, id: exercise-e}
 
-%% This is an example of a quiz with a question that has its answer set to be case-sensitive.
+%% This is an example of an exercise with a question that has its answer set to be case-sensitive.
 
 {case-sensitive: true}
 ? What is the name of a cat breed that is associated with enjoying water?
 
 ! Turkish Van
 
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-q}
+{exercise, id: exercise-f}
 
-%% This is an example of a quiz with a question that requires a written answer and has a word limit, in this case 10.
+%% This is an example of an exercise with a question that requires a written answer and has a word limit, in this case 10.
 
 {words: 10}
 ? Name up to five types of colloquial cat coloring types
 
 ! Note to teaching assistant: Answers may include types including "Mitted," "Tuxedo," "Magpie," "Harlequin," "Patched.
 "
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-r}
+{exercise, id: exercise-g}
 
-%% This is an example of a quiz with a question that requires a written answer and has a page limit, in this case 2.
+%% This is an example of an exercise with a question that requires a written answer and has a page limit, in this case 2.
 
 {pages: 2}
 ? Write an essay on why cats are awesome.
 
 ! Note to teaching assistant: Answers should be graded based on the quality of the structure of the essay and the persuasiveness of the points made.
 
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-s}
+{exercise, id: exercise-h}
 
-%% This is an example of a quiz with a question that requires a written answer and has a line limit, in this case 5.
+%% This is an example of an exercise with a question that requires a written answer and has a line limit, in this case 5.
 
 {lines: 5}
 ? Write a brief paragraph on why dogs are also awesome.
 
 ! Note to teaching assistant: Extra points are to be awarded if the student mentions howmuch fun it is to take dogs for walks, as this is a classic difference between dogs and cats.
 
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-t}
+{exercise, id: exercise-i}
 
-%% This is an example of a quiz with a question that requires a short typed answer where there are multiple correct answers, in this case either Liger or Tigon.
+%% This is an example of an exercise with a question that requires a short typed answer where there are multiple correct answers, in this case either Liger or Tigon.
 
 ? What is the name of a cross between a lion and a tiger?
 
 ! Liger ; Tigon
 
-{/quiz}
+{/exercise}
 
-{quiz, id: quiz-u}
+{exercise, id: exercise-j}
 
-%% This is an example of a quiz that provides instructors with written instructions regarding the assessment of answers. Students will not see thse instructions.
+%% This is an example of an exercise that provides instructors with written instructions regarding the assessment of answers. Students will not see thse instructions.
 
 {words: 100}
 ? What are the three reasons cat videos are so popular online?
@@ -297,12 +298,12 @@ Answers may include:
 - Because we are hard-wired to like them after millennia of domestication
 {/answer}
 
-{/quiz}
+{/exercise}
 
 
-{quiz, id: quiz-v}
+{exercise, id: exercise-k}
 
-%% This is an example of a quiz with question alternates. Where questions are written in the course manuscript with the same number after the ? (in this case the number 1), then the course will randomly present the student with one of the alternates.
+%% This is an example of an exercise with question alternates. Where questions are written in the course manuscript with the same number after the ? (in this case the number 1), then the course will randomly present the student with one of the alternates.
 
 ?1 How many times has the most-viewed cat video of all time been viewed online?
 
@@ -318,4 +319,4 @@ b) Millions
 c) Billions
 D) Impossible to know
 
-{/quiz}
+{/exercise}
