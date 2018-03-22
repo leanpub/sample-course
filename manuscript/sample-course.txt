@@ -29,18 +29,6 @@ This content will be included in a course sample.
 
 {course-sample: false}
 
-{instructor: true}
-
-This content will appear in the Instructor version of the book files generated from your course manuscript.
-
-{instructor: false}
-
-{course-instructor: true}
-
-This content will appear in the Instructor version of the online course generated from your course manuscript.
-
-{course-instructor: false}
-
 {quiz, id: quiz-a}
 
 %% This is an example of a quiz with multiple-choice question.
