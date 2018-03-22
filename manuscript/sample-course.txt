@@ -179,31 +179,7 @@ d) 18-20 hours
 
 {/quiz}
 
-{exercise, id: exercise-a, version: 3}
-
-%% This is an example of an exercise with a version number (it will not be shown to students).
-
-? Which country sent the first cat into space? (The cat survived.)
-
-A) France
-b) Soviet Union
-c) United States
-d) China
-
-{/exercise}
-
-
-{exercise, id: exercise-b, mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
-
-%% This is an example of an exercise where the marking is done by an external API. The URL is not real and is provided only as an example
-
-? What is the name of the coffee type that is made from beans found in cat poop?
-
-! Kopi Luwak
-
-{/exercise}
-
-{exercise, id: exercise-c}
+{quiz, id: quiz-l}
 
 %% This is an example of an exercise with a question that has a unique number of points, in this case 5.
 
@@ -212,11 +188,34 @@ d) China
 
 ! Egyptian Mau
 
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-d}
+{quiz, id: quiz-m, version: 3}
 
-%% This is an example of an exercise with a question that has a random choice order for the presentation of the answers.
+%% This is an example of an quiz with a version number (it will not be shown to students).
+
+? Which country sent the first cat into space? (The cat survived.)
+
+A) France
+b) Soviet Union
+c) United States
+d) China
+
+{/quiz}
+
+{quiz, id: quiz-n, mark-request-url: https://leanpub.com/gJRsQnkXc6Cb}
+
+%% This is an example of an quiz where the marking is done by an external API. The URL is not real and is provided only as an example
+
+? What is the name of the coffee type that is made from beans found in cat poop?
+
+! Kopi Luwak
+
+{/quiz}
+
+{quiz, id: quiz-o}
+
+%% This is an example of an quiz with a question that has a random choice order for the presentation of the answers.
 
 {random-choice-order: true}
 ? What is the scientific term for the way cats always land on their feet?
@@ -226,65 +225,65 @@ B) The "Righting Reflex"
 c) The "Knievel Effect"
 d) None of the above
 
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-e}
+{quiz, id: quiz-p}
 
-%% This is an example of an exercise with a question that has its answer set to be case-sensitive.
+%% This is an example of an quiz with a question that has its answer set to be case-sensitive.
 
 {case-sensitive: true}
 ? What is the name of a cat breed that is associated with enjoying water?
 
 ! Turkish Van
 
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-f}
+{quiz, id: quiz-q}
 
-%% This is an example of an exercise with a question that requires a written answer and has a word limit, in this case 10.
+%% This is an example of an quiz with a question that requires a written answer and has a word limit, in this case 10.
 
 {words: 10}
 ? Name up to five types of colloquial cat coloring types
 
 ! Note to teaching assistant: Answers may include types including "Mitted," "Tuxedo," "Magpie," "Harlequin," "Patched.
 "
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-g}
+{quiz, id: quiz-r}
 
-%% This is an example of an exercise with a question that requires a written answer and has a page limit, in this case 2.
+%% This is an example of an quiz with a question that requires a written answer and has a page limit, in this case 2.
 
 {pages: 2}
 ? Write an essay on why cats are awesome.
 
 ! Note to teaching assistant: Answers should be graded based on the quality of the structure of the essay and the persuasiveness of the points made.
 
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-h}
+{quiz, id: quiz-s}
 
-%% This is an example of an exercise with a question that requires a written answer and has a line limit, in this case 5.
+%% This is an example of an quiz with a question that requires a written answer and has a line limit, in this case 5.
 
 {lines: 5}
 ? Write a brief paragraph on why dogs are also awesome.
 
 ! Note to teaching assistant: Extra points are to be awarded if the student mentions howmuch fun it is to take dogs for walks, as this is a classic difference between dogs and cats.
 
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-i}
+{quiz, id: quiz-t}
 
-%% This is an example of an exercise with a question that requires a short typed answer where there are multiple correct answers, in this case either Liger or Tigon.
+%% This is an example of an quiz with a question that requires a short typed answer where there are multiple correct answers, in this case either Liger or Tigon.
 
 ? What is the name of a cross between a lion and a tiger?
 
 ! Liger ; Tigon
 
-{/exercise}
+{/quiz}
 
-{exercise, id: exercise-j}
+{quiz, id: quiz-u}
 
-%% This is an example of an exercise that provides instructors with written instructions regarding the assessment of answers. Students will not see thse instructions.
+%% This is an example of an quiz that provides instructors with written instructions regarding the assessment of answers. Students will not see thse instructions.
 
 {words: 100}
 ? What are the three reasons cat videos are so popular online?
@@ -298,12 +297,12 @@ Answers may include:
 - Because we are hard-wired to like them after millennia of domestication
 {/answer}
 
-{/exercise}
+{/quiz}
 
 
-{exercise, id: exercise-k}
+{quiz, id: quiz-v}
 
-%% This is an example of an exercise with question alternates. Where questions are written in the course manuscript with the same number after the ? (in this case the number 1), then the course will randomly present the student with one of the alternates.
+%% This is an example of an quiz with question alternates. Where questions are written in the course manuscript with the same number after the ? (in this case the number 1), then the course will randomly present the student with one of the alternates.
 
 ?1 How many times has the most-viewed cat video of all time been viewed online?
 
@@ -318,5 +317,32 @@ a) Thousands
 b) Millions
 c) Billions
 D) Impossible to know
+
+{/quiz}
+
+{exercise, id: exercise-a}
+
+? Name a country where black cats are generally considered lucky.
+
+! Australia ; Britain ; United Kingdom ; UK
+
+{/exercise}
+
+{exercise, id: exercise-b}
+
+? How many times its own height can a cat jump?
+
+A) Five
+b) Six
+c) Seven
+d) Eight
+
+{/exercise}
+
+{exercise, id: exercise-c}
+
+? In essay format, discuss the meaning of the Cheshire Cat in Alice in Wonderland.
+
+! Note to instructors: Essays should be graded on the basis of structure, accuracy and creativity.
 
 {/exercise}
