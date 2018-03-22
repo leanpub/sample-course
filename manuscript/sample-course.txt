@@ -13,6 +13,8 @@ Below is a video with Peter explaining Markua, if you're interested in learning 
 {type: video, poster: "http://img.youtube.com/vi/VOCYL-FNbr0/mqdefault.jpg"}
 ![Introducing Markua](https://www.youtube.com/watch?t=105&v=VOCYL-FNbr0)
 
+{course-sample: true}
+
 # Images and Local Content
 
 Here is an image of a cat named Marmalade and a dog named Tangerine:
@@ -22,8 +24,6 @@ Here is an image of a cat named Marmalade and a dog named Tangerine:
 Please check the `resources` folder in the `manuscript` folder for this course to see where local files should be stored.
 
 %% If you typed this in a course manuscript, students would not see it
-
-{course-sample: true}
 
 This content will be included in a course sample.
 
